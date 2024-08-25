@@ -1,0 +1,53 @@
+/*body {
+    background-color: darkred;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+*/
+
+header {
+    background-image: url('imagenes_videos/principal.jpg'); /* Reemplaza 'tu_imagen.jpg' con el nombre de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el área del header */
+    background-position: center; /* Centra la imagen en el header */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 700px; /* Ajusta la altura del header según lo que necesites */
+    padding: 0;
+    margin: 0;
+}
+
+/* Solo aplica la imagen de fondo de los peces a la sección específica */
+section.peces-section {
+    background-image: url('imagenes_videos/mano_peces.jpg');
+    background-size: cover; /* Asegura que la imagen cubra todo el área de la sección */
+    background-position: center; /* Centra la imagen en la sección */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #553; /* Ajusta el color del texto para que sea legible sobre la imagen */
+    padding: 300px; /* Ajusta el padding para dar espacio al contenido */
+    text-align: center;
+}
+
+/* Sección con fondo cremita */
+.cremita-section {
+    background-color: #f5f5dc; /* Color de fondo cremita */
+    padding: 50px; /* Espacio alrededor del contenido de la sección */
+    text-align: left; /* Alinea el contenido a la izquierda de manera predeterminada */
+}
+
+/* Imágenes dentro de la sección cremita */
+.cremita-section img {
+    max-width: 45%; /* Las imágenes ocuparán el ancho máximo posible */
+    height: auto; /* Mantiene la proporción original de las imágenes */
+    margin: 20px 0; /* Espacio entre las imágenes */
+}
+
+/* Primera imagen (alineada a la izquierda) */
+.cremita-section img:first-of-type {
+    align-self: flex-start; /* Alinea la primera imagen a la izquierda */
+}
+
+/* Segunda imagen (alineada a la derecha) */
+.cremita-section img:last-of-type {
+    align-self: flex-end; /* Alinea la segunda imagen a la derecha */
+    display: block;
+    margin-left: auto; /* Mueve la imagen a la derecha */
+}
